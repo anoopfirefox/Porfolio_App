@@ -1,0 +1,11 @@
+express
+express-validator
+bcrypt
+jsonwebtoken 
+config
+mongoose
+gravatar
+request
+nodemon 
+concurrently
+body-parser

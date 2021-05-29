@@ -1,0 +1,28 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  labels:
+     app: devconnectorapp
+  name: devconnectorapp
+  namespace: dev-connector
+spec:
+  replicas: 3
+  strategy:
+    type: RollingUpdate
+    rollingUpdate:
+        maxUnavailable: 25%
+        maxSurge: 2
+  selector:
+    matchLabels:
+        app: devconnectorapp
+  template:
+    metadata:
+      labels:
+         app: devconnectorapp
+    spec:
+      containers:
+        - image: anoophegde1995/dev-portfolio:v2
+          name: devconnectorapp
+          ports:
+          - containerPort: 3000
+            name: devconnectorapp

@@ -1,0 +1,12 @@
+FROM mongo-express:latest
+MAINTAINER "anoop.techstorm@gmail.com"
+
+WORKDIR /apps
+
+COPY package.json .
+
+COPY ./  .
+
+CMD ["npm","run","dev"]
+
+EXPOSE 3000

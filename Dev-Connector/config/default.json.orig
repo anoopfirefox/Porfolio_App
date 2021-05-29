@@ -1,0 +1,6 @@
+{
+  "mongoURI": "mongodb+srv://anooptechstorm:anooptechstorm@devconnector-rjmmb.mongodb.net/test?retryWrites=true&w=majority",
+  "jwtSecret": "mysecrettoken"
+}
+
+
