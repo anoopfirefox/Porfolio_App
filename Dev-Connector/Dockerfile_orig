@@ -1,6 +1,6 @@
 FROM mongo-express:latest
 MAINTAINER "anoop.techstorm@gmail.com"
-
+ENV node js = 10.24
 WORKDIR /apps
 
 COPY package.json .
